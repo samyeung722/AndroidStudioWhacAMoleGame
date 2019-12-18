@@ -4,4 +4,243 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/stopwatch"
+        app:layout_constraintBottom_toTopOf="@+id/gridMole"
+        app:layout_constraintEnd_toStartOf="@+id/timerText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Time: 15"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridMole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridDead"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView00"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView55"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView66"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView77"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView88"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView99"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/deadpooh"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridMole"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="increaseScore"
+            android:src="@drawable/mole_ham"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Score: 0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridMole" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:onClick="backToMenu"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridMole"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

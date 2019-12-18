@@ -1,60 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ee8000"
     android:gravity="center"
-    >
+    android:orientation="vertical">
 
     <FrameLayout
+        android:id="@+id/popup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/gps_popup"
+        android:layout_marginTop="20dp" />
 
-        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Whac-A-Mole"
+        android:textAlignment="center"
+        android:textSize="48dp" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TableRow android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/mole_ham" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="64 Points"
+                android:textSize="32dp" />
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/stopwatch" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Watch Time End"
+                android:textSize="32dp" />
+        </TableRow>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Whac-A-Mole"
-            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Click to Hit"
+            android:textSize="32dp" />
 
-            />
+    </TableLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/scoreLabel"
-            android:textSize="32sp"
-
-            />
-
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
-
-            <TableRow
-                android:gravity="center_vertical">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/alieng"
-
-                />
-
-
-            </TableRow>
-
-
-        </TableLayout>
-
-
-
-
-    </FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:onClick="startGame"
+        android:text="START" />
 
 </LinearLayout>
